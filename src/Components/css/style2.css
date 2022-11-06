@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+    .head {
+    background-color: #33daff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "PT Sans", sans-serif;
+    color: rgb(20, 4, 138);
+    margin:0px;
+}
+.head h1 {
+    font-size: 8vw;
+}
+.head p {
+    font-size: 2.5rem;
+}
+.uppersvg {
+    background-color: #33daff;
+}
+.heading1{
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    color: rgb(190, 228, 243);
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top:50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.work {
+background-color:#000000;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.imgs{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding:0;
+
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap:50px 50px;
+}
+.swiper-slide1 img{
+    /* overflow:auto; */
+    
+    padding:5px;
+    display: block;
+    height: 450px;
+    width: 350px;
+    border: 0px solid rgb(165, 225, 249);
+    box-shadow: rgba(221, 255, 254, 0.75) 0px 20px 30px, rgba(221, 255, 254, 0.88) 0px -12px 20px, rgba(221, 255, 254, 0.88) 0px 4px 6px, rgba(221, 255, 254, 0.83) 0px 12px 13px, rgba(221, 255, 254, 0.91) 0px -3px 5px;
+    border-radius: 5px; 
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f7f5f5;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbr{
+    background-color: black;
+}
+.navbar{
+  position: fixed;
+  /* color:rgb(190, 228, 243);  */
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0px;
+  transition: all 0.3s ease;
+  /* background: #1b1b1b; */
+}
+.navbar.sticky{
+  background-color: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: rgb(190, 228, 243);
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: rgb(190, 228, 243);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-btn i{
+    color:rgb(190, 228, 243);
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+.icon{
+  color: rgb(190, 228, 243);
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    color:rgb(190, 228, 243);
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 60%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
+
+@media(max-width:900px)
+  {
+    .head p{
+        font-size: 3vh;
+    }
+  }
+  
+  @media(max-width:620px)
+  {
+    .head p{
+        font-size: 2vh;
+    }
+    .heading1{
+      font-size:8vw;
+    }
+    .head h1{
+      padding:1rem;
+    }
+  }
