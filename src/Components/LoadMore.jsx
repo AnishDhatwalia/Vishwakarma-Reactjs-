@@ -39,7 +39,7 @@ import email from "./images/email.png"
 import { FaBars, FaBackward} from 'react-icons/fa';
 import { useEffect ,useState} from 'react';
 import { Link } from 'react-router-dom'
-const Sheets=[pic1,pic2,pic3,pic4,,pic5,,pic6];
+const Sheets=[pic1,pic2,pic3,pic4,pic5,pic6];
 const front=[pic7,pic8,pic9,pic10,pic11,pic12];
 const door=[pic13,pic14,pic15,pic16,pic17,pic18];
 const modular=[pic19,pic20,pic21,pic22,pic23,pic24];
@@ -72,7 +72,7 @@ const LoadMore = () => {
     <nav className={navbar?"navbar sticky":"navbar"}> {/*usestate is used so setnavbar is true then it checks and adds sticky class to nav bar */}
       <div className="content">
         <div className="logo">
-          <Link to="/">VISHWAKARMA</Link>
+          <Link to="/Vishwakarma-Reactjs-">VISHWAKARMA</Link>
         </div>
         <ul className="menu-list">
           <div className="icon cancel-btn">
