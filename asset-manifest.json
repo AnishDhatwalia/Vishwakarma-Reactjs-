@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Vishwakarma-Reactjs-/static/css/main.19b02447.css",
+    "main.css": "/Vishwakarma-Reactjs-/static/css/main.715df9f5.css",
     "main.js": "/Vishwakarma-Reactjs-/static/js/main.8245409d.js",
     "static/js/787.142da1d4.chunk.js": "/Vishwakarma-Reactjs-/static/js/787.142da1d4.chunk.js",
     "static/media/2.jpg": "/Vishwakarma-Reactjs-/static/media/2.3b386679ef5209cd4015.jpg",
@@ -23,12 +23,12 @@
     "static/media/email.png": "/Vishwakarma-Reactjs-/static/media/email.2dd29f41349dbf69c902.png",
     "static/media/contact.png": "/Vishwakarma-Reactjs-/static/media/contact.42031423f6c56f47b89c.png",
     "index.html": "/Vishwakarma-Reactjs-/index.html",
-    "main.19b02447.css.map": "/Vishwakarma-Reactjs-/static/css/main.19b02447.css.map",
+    "main.715df9f5.css.map": "/Vishwakarma-Reactjs-/static/css/main.715df9f5.css.map",
     "main.8245409d.js.map": "/Vishwakarma-Reactjs-/static/js/main.8245409d.js.map",
     "787.142da1d4.chunk.js.map": "/Vishwakarma-Reactjs-/static/js/787.142da1d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19b02447.css",
+    "static/css/main.715df9f5.css",
     "static/js/main.8245409d.js"
   ]
 }
