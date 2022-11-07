@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route exact path="/Vishwakarma-Reactjs-" element={<First/>}/>
         <Route path="/Vishwakarma-Reactjs-/LoadMore" element={<LoadMore/>}  />
+        <Route path="*" element={<Navigate to="/Vishwakarma-Reactjs-"/> } replace/>
       </Routes>
       </Router>
     </>
