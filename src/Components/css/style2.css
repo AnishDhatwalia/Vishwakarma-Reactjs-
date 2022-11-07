@@ -195,6 +195,15 @@ box-sizing:border-box;
   }
 }
 @media (max-width: 380px) {
+  .swiper-slide1 img{
+    /* overflow:auto; */
+    
+    padding:5px;
+    display: block;
+    height: 400px;
+    width: 300px;
+
+  }
   .navbar .logo a{
     font-size: 27px;
   }

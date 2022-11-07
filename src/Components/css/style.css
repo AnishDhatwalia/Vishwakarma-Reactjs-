@@ -63,7 +63,7 @@
     margin: 0px;
     padding: 20px 0 30px 0;
     overflow:hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
 
   .swiper {
