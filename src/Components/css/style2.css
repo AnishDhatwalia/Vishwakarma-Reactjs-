@@ -156,9 +156,9 @@ box-sizing:border-box;
   }
 }
 @media (max-width: 868px) {
-  body.disabled{
+  /* body.disabled{
     overflow: hidden;
-  }
+  } */
   .icon{
     color:rgb(190, 228, 243);
     display: block;
@@ -167,7 +167,7 @@ box-sizing:border-box;
     display: none;
   }
   .navbar .menu-list{
-    position: fixed;
+    position:fixed;
     height: 100vh;
     width: 60%;
     max-width: 400px;

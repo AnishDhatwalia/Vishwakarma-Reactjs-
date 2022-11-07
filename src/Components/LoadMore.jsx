@@ -46,45 +46,71 @@ const modular=[pic19,pic20,pic21,pic22,pic23,pic24];
 const steel=[pic25,pic26,pic27,pic28,pic29,pic30];
 const LoadMore = () => {
   const [navbar,setNavbar] = useState(false); {/* state for navbar so it can change immediately */}
+  const [body,setBody] = useState(false); {/* state for navbar so it can change immediately */}
+  const [cancel,setcancel] = useState(false); {/* state for navbar so it can change immediately */}
   useEffect(() => {
     const handleScroll = event => {
+      const navbar = document.querySelector(".navbar");
       if(window.scrollY>80) 
       {
         {/* when the scroll is done more than 80 then the state is true that is add 'sticky' class to navbar */}
+        navbar.classList.add("sticky");
         setNavbar(true);
       }
       else
       {
+        navbar.classList.remove("sticky");
         setNavbar(false);
       }
     };
-
+    const handlemenu = event => {
+          const body=document.querySelector("body");
+          const navbar = document.querySelector(".navbar");
+          const menuBtn = document.querySelector(".menu-btn");
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        const handlecancel = event => {
+          const body=document.querySelector("body");
+          const navbar = document.querySelector(".navbar");
+          const menuBtn = document.querySelector(".menu-btn");
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+}
     window.addEventListener('scroll', handleScroll);
-
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.addEventListener('click',handlemenu);
+    cancelBtn.addEventListener('click',handlecancel);
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      menuBtn.removeEventListener('click',handlemenu);
+      cancelBtn.removeEventListener('click',handlecancel);
     };
   }, []);
   return (
   <>
   <body >
   <div className="navbr" >
-    <nav className={navbar?"navbar sticky":"navbar"}> {/*usestate is used so setnavbar is true then it checks and adds sticky class to nav bar */}
+    <nav className='navbar'> {/*usestate is used so setnavbar is true then it checks and adds sticky class to nav bar */}
       <div className="content">
         <div className="logo">
           <Link to="/Vishwakarma-Reactjs-">VISHWAKARMA</Link>
         </div>
         <ul className="menu-list">
-          <div className="icon cancel-btn">
+          <div className="icon">
           
-            <FaBackward onClick={()=>{
+            {/* <FaBackward onClick={()=>{
               const body=document.querySelector("body");
               const navbar = document.querySelector(".navbar");
               const menuBtn = document.querySelector(".menu-btn");
               body.classList.remove("disabled");
               navbar.classList.remove("show");
               menuBtn.classList.remove("hide");
-            }}/>
+            }}/> */}
+            <FaBackward className='cancel-btn'/>
           </div>
           <li><a href="#3dsheets">3D Sheets</a></li>
           <li><a href="#FrontFitting">Front Fitting</a></li>
@@ -93,14 +119,15 @@ const LoadMore = () => {
           <li><a href="#SteelRailing">Steel Railing</a></li>
         </ul>
         <div className="icon menu-btn">
-          <FaBars onClick={()=>{
+          {/* <FaBars onClick={()=>{
           const body=document.querySelector("body");
           const navbar = document.querySelector(".navbar");
           const menuBtn = document.querySelector(".menu-btn");
           navbar.classList.add("show");
           menuBtn.classList.add("hide");
           body.classList.add("disabled");
-        }}/>
+        }}/> */}
+        <FaBars/>
         </div>
       </div>
     </nav>

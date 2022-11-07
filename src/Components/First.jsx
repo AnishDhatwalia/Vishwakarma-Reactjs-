@@ -78,7 +78,7 @@ const First = () => {
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       {/* <!-- Initialize Swiper --> */}
       <lightbox_plus/>
-      <h1 className="heading4"><NavLink to="/LoadMore">Load More</NavLink></h1>
+      <h1 className="heading4"><NavLink to="/Vishwakarma-Reactjs-/LoadMore">Load More</NavLink></h1>
     </section>
     <section className="Loc" >
       <div className="location" id="location">
